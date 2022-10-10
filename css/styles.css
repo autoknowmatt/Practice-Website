@@ -1,0 +1,80 @@
+:root {
+    font-size: 16px;
+    font-family: Georgia;
+    --lincoln-green: hsla(122, 75%, 21%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --gunmetal: hsla(220, 10%, 18%, 1);
+    --green-ryb: hsla(103, 50%, 48%, 1);
+    --granny-smith-apple: hsla(107, 66%, 76%, 1);
+}
+
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background:var(--gunmetal);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--lincoln-green);
+    border-radius: 50px;
+}
+
+.navbar {
+    background:var(--gunmetal);
+    width: 100%;
+    height: 5vh;
+    padding: 0;
+  }
+
+.navbar ul {
+    line-height: 2rem;
+    height: 2rem;
+    float: left;
+}
+
+.navbar li{
+    list-style: none;
+    display: inline;
+    padding-left: 1rem;
+  }
+
+.navbar a {
+    font-family: 'Bitter';
+    font-size: 1rem;
+    color: white;
+    text-decoration-line:none;
+  }
+
+.navbar a:hover {
+    filter: grayscale(0%) opacity(1);
+    background-color: var(--gunmetal);
+    color: var(--granny-smith-apple);
+  }
+
+.logo {
+    float: left;
+    height: 4rem;
+}
+
+.navbar h1 {
+    font-family: 'Bitter', Georgia;
+    color: white;
+    float: left;
+}
+
+#banner {
+    height: 35vh;
+    background-image:url('../images/banner-grass.jpg'); 
+
+}

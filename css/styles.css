@@ -98,6 +98,11 @@ body::-webkit-scrollbar-thumb {
     text-align: right;
 }
 
+.hamburger-div a.icon {
+    font-size: 3rem;
+    vertical-align: middle;
+}
+
 
 /* @media (min-width: 576px){
     .navbar ul {

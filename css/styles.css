@@ -36,18 +36,17 @@ body::-webkit-scrollbar-thumb {
     height: 4rem;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
   }
 
-.nav-div {
-    width: 25%;
-    float: left;
-}
 
 .title-div{
     display: inline-block;
-    position: relative;
-    width: 50%;
-    text-align: center;
+}
+
+.nav-div {
+    width: 15%;
 }
 
 .navbar ul {
@@ -94,20 +93,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hamburger-div {
-    width: 25%;
-    float: right;
     height: 4rem;
+    width: 15%;
+    text-align: right;
 }
 
-.hamburger-div a.icon {
-    float: right;
-}
 
-.navbar a.icon {
-    right: 0 !important;
-}
-
-@media (min-width: 576px){
+/* @media (min-width: 576px){
     .navbar ul {
         display: none;
     }
@@ -131,4 +123,4 @@ body::-webkit-scrollbar-thumb {
         height: 2rem;
         display: inline-block;
     }
-}
+} */

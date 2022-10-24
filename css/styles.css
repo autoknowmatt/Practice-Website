@@ -35,12 +35,12 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 4rem;
     padding: 0;
+    overflow: hidden;
   }
 
 .nav-div {
     width: 25%;
     float: left;
-
 }
 
 .title-div{
@@ -59,7 +59,7 @@ body::-webkit-scrollbar-thumb {
 .navbar li{
     list-style: none;
     display: inline;
-    padding-left: 1rem;
+    padding-left: .3rem;
   }
 
 .navbar a {
@@ -85,10 +85,50 @@ body::-webkit-scrollbar-thumb {
 .navbar h1 {
     font-family: 'Bitter', Georgia;
     color: white;
+    font-size: 1.5rem;
 }
 
 #banner {
     height: 35vh;
     background-image:url('../images/banner-grass.jpg'); 
+}
 
+.hamburger-div {
+    width: 25%;
+    float: right;
+    height: 4rem;
+}
+
+.hamburger-div a.icon {
+    float: right;
+}
+
+.navbar a.icon {
+    right: 0 !important;
+}
+
+@media (min-width: 576px){
+    .navbar ul {
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .navbar ul {
+        display: none;
+    }
+}
+
+@media (min-width: 992px){
+    .navbar ul {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px){
+    .navbar ul {
+        line-height: 2rem;
+        height: 2rem;
+        display: inline-block;
+    }
 }
